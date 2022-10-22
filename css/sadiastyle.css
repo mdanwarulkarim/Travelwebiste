@@ -1,0 +1,28 @@
+
+    ul {
+      font-size: 30px;
+      text-align: center;
+
+    }
+
+    h3 {
+      font-size: 20px;
+      border-style: dashed;
+      color: orange;
+    }
+  
+  
+  
+    p {
+      text-align: center;
+
+      font-size: 20px;
+      border-style: double;
+      color: purple;
+
+    }
+
+    img {
+      border-style: solid;
+    }
+  
