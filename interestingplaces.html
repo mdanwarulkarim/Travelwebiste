@@ -1,78 +1,211 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="css/interestingstyle.css">
-  <title>Interesting places</title>
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel-to-Invigorate | Discover Bangladesh With Style</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <div id="page">
-    <div id="header-page">
-      <div id="header">
-        <div class="container">
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <i class="fa-solid fa-compass" style="color: var(--brand-primary);"></i>
+        Travel<span>-to-</span>Invigorate
+      </a>
+      <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="">Home</a></li>
+          <li><a href="outdoor.html" class="">Outdoor</a></li>
+          <li><a href="indoor.html" class="">Indoor</a></li>
+          <li><a href="interestingplaces.html" class="active">Places</a></li>
+          <li><a href="PackingTips.html" class="">Packing</a></li>
+          <li><a href="food.html" class="">Food</a></li>
+          <li><a href="language_tips.html" class="">Language</a></li>
+          <li><a href="contact.html" class="">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark Mode" title="Toggle Dark/Light Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
 
-          <div id="logo">
-            <h1> <span id="blk">Inte</span><span id="gry">rest</span><span id="blk">ing</span> Places</h1>
-            <hr>
-            <div class="border border-3" id="textbackground">
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="hero-badge"><i class="fa-solid fa-compass"></i> Curated Travel Directory</span>
+        <h1>Interesting Places & Regional Transport</h1>
+        <p>
+          Explore our central hub connecting Bangladesh's outdoor landscapes, indoor cultural sanctuaries, and unique regional modes of transportation.
+        </p>
+      </div>
+    </section>
 
-              <a href="indoor2.html">
-                <h2><span id="blk">Outdoor</span> Activities</h2>
-              </a>
-              <p>t is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
-                of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+    <section class="section">
+      <div class="container">
+        <div class="grid-3">
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Save_the_sundarbans_20.jpg/960px-Save_the_sundarbans_20.jpg" alt="Sundarbans East Wildlife Sanctuary, Bangladesh" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Save_the_sundarbans_20.jpg" target="_blank" rel="noopener noreferrer">Photo: Shihabur Rahman · CC BY-SA 4.0</a>
+              <span class="card-badge-overlay">9 Iconic Spots</span>
             </div>
-            <hr>
-
-            <div id="textbackground">
-
-              <a href="indoor.html">
-                <h2><span id="blk">Indoor</span> Interesting<span id="blk"> Activities</span></h2>
+            <div class="card-body">
+              <h3>Outdoor Activities</h3>
+              <p>From the UNESCO-listed Mangrove Sundarbans and 8th-century Paharpur Buddhist Monastery to the mist-covered ridges of Sajek Valley and Srimangal tea estates.</p>
+              <a href="outdoor.html" class="card-footer">
+                <span>Explore Outdoor Guide</span>
+                <i class="fa-solid fa-arrow-right"></i>
               </a>
-              <p>t is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
-                of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
             </div>
-            <hr>
+          </article>
 
-            <div id="textbackground">
-
-              <a href="transportation.html">
-                <h2><span id="blk">Transpor</span>tation</h2>
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Liberation_War_Museum%2Cnew_building.jpg" alt="Liberation War Museum in Dhaka, Bangladesh" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Liberation_War_Museum,new_building.jpg" target="_blank" rel="noopener noreferrer">Photo: Ahm masum · CC BY-SA 4.0</a>
+              <span class="card-badge-overlay">5 Cultural Hubs</span>
+            </div>
+            <div class="card-body">
+              <h3>Indoor Interesting Activities</h3>
+              <p>Discover Dhaka's subterranean Independence Museum, the Liberation War Museum, Drik Gallery's photography halls, Novo Theatre, and Dhamrai's metal artisans.</p>
+              <a href="indoor.html" class="card-footer">
+                <span>Explore Indoor Guide</span>
+                <i class="fa-solid fa-arrow-right"></i>
               </a>
-              <p>There are plenty of ways to get around in Bangladesh apart from private cars and motor bikes. Do keep
-                in mind that some of these transports are exclusive to certain regions of Bangladesh.</p>
             </div>
-            <hr>
+          </article>
 
-            <div id="textbackground">
-
-              <a href="index.html">
-                <h2><span id="blk">Home</span> Page</h2>
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/A_rickshaw_puller_in_Dhaka.jpg/960px-A_rickshaw_puller_in_Dhaka.jpg" alt="Cycle rickshaw in Dhaka, Bangladesh" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:A_rickshaw_puller_in_Dhaka.jpg" target="_blank" rel="noopener noreferrer">Photo: Nurunnaby Chowdhury · CC BY-SA 4.0</a>
+              <span class="card-badge-overlay">Getting Around</span>
+            </div>
+            <div class="card-body">
+              <h3>Transportation in Bangladesh</h3>
+              <p>There are plenty of ways to get around in Bangladesh apart from private cars and motorbikes. Keep in mind that many iconic transports are exclusive to specific regions.</p>
+              <a href="#transport-section" class="card-footer">
+                <span>View Regional Transport</span>
+                <i class="fa-solid fa-arrow-down"></i>
               </a>
-              <p> Go Back to Home Page</p>
             </div>
-            <hr>
+          </article>
+        </div>
 
-            <video src="https://static.videezy.com/system/resources/previews/000/045/990/original/stockfootage0085.mp4"
-              autoplay loop>
-            </video>
+        <div id="transport-section" style="margin-top: 4.5rem;">
+          <div class="section-header">
+            <span class="tag-badge">Local Mobility</span>
+            <h2>Getting Around Bangladesh Like a Local</h2>
+            <p>Navigate bustling city streets, tranquil river deltas, and steep mountain tracks using these signature modes of transport.</p>
+          </div>
+
+          <div class="grid-4">
+            <div class="card">
+              <div class="card-body">
+                <span class="tag-badge" style="align-self: flex-start; margin-bottom: 0.75rem;">Urban & Heritage</span>
+                <h3>Cycle Rickshaw & Metro</h3>
+                <p>Colorful hand-painted cycle rickshaws are the heart of neighborhood travel in Dhaka, while the modern Dhaka Metro Rail (MRT Line-6) beats city traffic in minutes.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <span class="tag-badge" style="align-self: flex-start; margin-bottom: 0.75rem;">Hill Tracts Exclusive</span>
+                <h3>Chander Gari (Moon Car)</h3>
+                <p>Open-top four-wheel-drive utility jeeps specially modified to climb the steep, winding mountain roads of Sajek Valley, Bandarban, and Khagrachhari.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <span class="tag-badge" style="align-self: flex-start; margin-bottom: 0.75rem;">Riverine Delta</span>
+                <h3>Sadarghat Launches & Sampans</h3>
+                <p>Triple-deck passenger river launches connect Dhaka to Barishal and Bagerhat overnight, while traditional wooden Sampan boats glide across Kaptai Lake and Sangu River.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <span class="tag-badge" style="align-self: flex-start; margin-bottom: 0.75rem;">City & Highway</span>
+                <h3>CNG Auto-Rickshaw</h3>
+                <p>Green compressed-natural-gas three-wheelers are ubiquitous across Dhaka, Chittagong, and Sylhet for quick point-to-point hops through busy streets.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Travel-to-Invigorate</h3>
+          <p style="font-size: 0.92rem; line-height: 1.7; color: #94a3b8;">
+            If you travel, you will not only learn about foreign cultures, but about your own as well. You will notice the cultural differences, and will find out what makes your culture unique. After returning from a long journey, you will see your country with new eyes.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/mdanwarulkarim" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a>
+            <a href="outdoor.html"><i class="fa-solid fa-angle-right"></i> Outdoor Activities</a>
+            <a href="indoor.html"><i class="fa-solid fa-angle-right"></i> Indoor Activities</a>
+            <a href="interestingplaces.html"><i class="fa-solid fa-angle-right"></i> Interesting Places</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Traveler Resources</h4>
+          <div class="footer-links">
+            <a href="PackingTips.html"><i class="fa-solid fa-angle-right"></i> Smart Packing Tips</a>
+            <a href="food.html"><i class="fa-solid fa-angle-right"></i> Traditional Cuisine</a>
+            <a href="language_tips.html"><i class="fa-solid fa-angle-right"></i> Bangla Language Guide</a>
+            <a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact & Support</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="footer-links">
+            <a href="https://goo.gl/maps/NkenkVLuLNDpVBSEA" target="_blank">
+              <i class="fa-solid fa-location-dot" style="color: var(--brand-primary);"></i>
+              Dhaka, Bangladesh
+            </a>
+            <a href="tel:+601112855248">
+              <i class="fa-solid fa-phone" style="color: var(--brand-primary);"></i>
+              +60-1112855248
+            </a>
+            <a href="mailto:karim247live@gmail.com">
+              <i class="fa-solid fa-envelope" style="color: var(--brand-primary);"></i>
+              karim247live@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Travel-to-Invigorate. Crafted by Md. Anwarul Karim.</span>
+        <span>Designed for Cultural & Heritage Exploration</span>
+      </div>
     </div>
-  </div>
-
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
+  </footer>
+  <script src="script.js"></script>
 </body>
-
 </html>

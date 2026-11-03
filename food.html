@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Traditional Bangladeshi Food | Travel-to-Invigorate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <i class="fa-solid fa-compass" style="color: var(--brand-primary);"></i>
+        Travel<span>-to-</span>Invigorate
+      </a>
+      <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="">Home</a></li>
+          <li><a href="outdoor.html" class="">Outdoor</a></li>
+          <li><a href="indoor.html" class="">Indoor</a></li>
+          <li><a href="interestingplaces.html" class="">Places</a></li>
+          <li><a href="PackingTips.html" class="">Packing</a></li>
+          <li><a href="food.html" class="active">Food</a></li>
+          <li><a href="language_tips.html" class="">Language</a></li>
+          <li><a href="contact.html" class="">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark Mode" title="Toggle Dark/Light Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="hero-badge"><i class="fa-solid fa-utensils"></i> Fish, Rice, Mughlai & Mithai</span>
+        <h1>Traditional Bangladeshi Food & Cuisine</h1>
+        <p>
+          Bangladesh is a land of food and taste. The staple soul of the country is <strong>Fish and Rice (Maache-Bhaate Bangali)</strong>, enriched over centuries by aromatic Mughlai spices, vibrant street delicacies, and iconic Bengali sweets.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filter-controls">
+          <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all">All Culinary Categories (6)</button>
+            <button class="filter-btn" data-filter="traditional">Traditional & Bangaliketa</button>
+            <button class="filter-btn" data-filter="cuisine">Mughlai & Royal Cuisine</button>
+            <button class="filter-btn" data-filter="sweets">Bengali Sweets & Street Food</button>
+          </div>
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="searchInput" placeholder="Search Biryani, Hilsha, Roshogolla, Fuchka..." />
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <!-- 1. Bangaliketa & Traditional Hospitality -->
+          <article class="card" data-category="traditional">
+            <div class="card-img-wrap">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/The_unique_culture_of_hospitality%2C_the_Mejbani_Bhoj.jpg/960px-The_unique_culture_of_hospitality%2C_the_Mejbani_Bhoj.jpg" alt="A traditional Chittagong Mezbani feast in Bangladesh" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:The_unique_culture_of_hospitality,_the_Mejbani_Bhoj.jpg" target="_blank" rel="noopener noreferrer">Photo: Mohammad Shajahan · CC BY-SA 4.0</a>
+              <span class="card-badge-overlay">বাঙালি কেতা &bull; Etiquette</span>
+            </div>
+            <div class="card-body">
+              <h3>Traditional Bangaliketa (বাঙালি কেতা)</h3>
+              <p>Bangladeshi people follow warm hospitality rules and traditional etiquette while dining, known as <em>Bangaliketa</em>. It defines how guests are welcomed to weddings and family dinners, how gifts are exchanged, and how utensils and multi-course meals are served with heartfelt care.</p>
+              <div class="card-footer">
+                <span>Heritage Dining</span>
+                <span>Authentic Household Tradition</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. Fish & Rice (Shorshe Ilish) -->
+          <article class="card" data-category="traditional">
+            <div class="card-img-wrap">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Shorshe_Ilish.jpg" alt="Shorshe ilish, hilsa cooked in mustard sauce" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Shorshe_Ilish.jpg" target="_blank" rel="noopener noreferrer">Photo: Kirti Poddar · CC BY 2.0</a>
+              <span class="card-badge-overlay">National Staple</span>
+            </div>
+            <div class="card-body">
+              <h3>Fish & Rice (Shorshe Ilish & Bhorta)</h3>
+              <p>Reflecting the riverine delta's heritage, steamed rice paired with Hilsa fish cooked in pungent mustard gravy (Shorshe Ilish) and spiced mashed vegetables (Bhorta) forms the timeless foundation of Bangladeshi home cooking.</p>
+              <div class="card-footer">
+                <span>River Delta Classics</span>
+                <span>Must-Try Local Meal</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Old Dhaka Kacchi Biryani & Korma -->
+          <article class="card" data-category="cuisine">
+            <div class="card-img-wrap">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Kacchi_Biryani_and_Borhani.jpg/960px-Kacchi_Biryani_and_Borhani.jpg" alt="Kacchi biryani and borhani, a Dhaka specialty" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Kacchi_Biryani_and_Borhani.jpg" target="_blank" rel="noopener noreferrer">Photo: Solomon The Magnifico · CC BY-SA 4.0</a>
+              <span class="card-badge-overlay">Mughlai Legacy</span>
+            </div>
+            <div class="card-body">
+              <h3>Old Dhaka Biryani & Mughlai Korma</h3>
+              <p>As the Mughal Capital of the Bengal Subah, Dhaka absorbed Persian, Turkish, and Arabic culinary artistry. This legacy shines in Old Dhaka's slow-cooked Kacchi Biryani, Morog Polao, and rich Korma prepared with fragrant Chinigura rice, saffron, spices, and generous ghee.</p>
+              <div class="card-footer">
+                <span>Old Dhaka (Puran Dhaka)</span>
+                <span>Royal Spice Blend</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Mezbani & Bhuna Beef -->
+          <article class="card" data-category="cuisine">
+            <div class="card-img-wrap">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/%E0%A6%AE%E0%A7%87%E0%A6%9C%E0%A6%AC%E0%A6%BE%E0%A6%A8%E0%A6%BF_-_20547794036.jpg/960px-%E0%A6%AE%E0%A7%87%E0%A6%9C%E0%A6%AC%E0%A6%BE%E0%A6%A8%E0%A6%BF_-_20547794036.jpg" alt="Mezbani cooking in Chittagong, Bangladesh" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:%E0%A6%AE%E0%A7%87%E0%A6%9C%E0%A6%AC%E0%A6%BE%E0%A6%A8%E0%A6%BF_-_20547794036.jpg" target="_blank" rel="noopener noreferrer">Photo: abdullah2ice · CC BY 2.0</a>
+              <span class="card-badge-overlay">Regional Feast</span>
+            </div>
+            <div class="card-body">
+              <h3>Chittagong Mezbani & Kala Bhuna</h3>
+              <p>Deeply spiced, slow-braised beef dishes such as Kala Bhuna and Mezbani Gosht showcase the bold regional spice palettes that evolved from centuries of maritime trade and communal feasts across Bengal.</p>
+              <div class="card-footer">
+                <span>Chittagong & Dhaka</span>
+                <span>Slow-Cooked Richness</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. Roshogolla & Rajbhog Sweets -->
+          <article class="card" data-category="sweets">
+            <div class="card-img-wrap">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Bengali_Sponge_Roshogolla_in_date_palm_jaggery_syrup.jpg/960px-Bengali_Sponge_Roshogolla_in_date_palm_jaggery_syrup.jpg" alt="Bengali sponge roshogolla in date-palm jaggery syrup" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Bengali_Sponge_Roshogolla_in_date_palm_jaggery_syrup.jpg" target="_blank" rel="noopener noreferrer">Photo: Prianxi · CC BY-SA 4.0</a>
+              <span class="card-badge-overlay">Bengali Mithai</span>
+            </div>
+            <div class="card-body">
+              <h3>Roshogolla, Rajbhog & Mishti Doi</h3>
+              <p>The sweet tooth of Bengalis is legendary. Iconic Roshogolla is a soft, spongy chhena dumpling simmered in light sugar syrup, while its royal cousin <em>Rajbhog</em> is stuffed with dry fruits, saffron, and cardamom—making it impossible to stop after eating just one.</p>
+              <div class="card-footer">
+                <span>Chhena Delicacies</span>
+                <span>Signature Dessert</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. Fuchka & Chotpoti Street Food -->
+          <article class="card" data-category="sweets">
+            <div class="card-img-wrap">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Gol_Guppas-Noida-UP-SP001.jpg/960px-Gol_Guppas-Noida-UP-SP001.jpg" alt="Gol gappas, a pani puri-style snack also known as fuchka in Bangladesh" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Gol_Guppas-Noida-UP-SP001.jpg" target="_blank" rel="noopener noreferrer">Photo: Sutapa Pal · CC BY-SA 4.0</a>
+              <span class="card-badge-overlay">Street Favorite</span>
+            </div>
+            <div class="card-body">
+              <h3>Crispy Fuchka & Tangy Chotpoti</h3>
+              <p>No evening walk in Bangladesh is complete without a plate of crispy hollow Fuchka shells stuffed with spiced yellow peas, mashed potatoes, fresh green chilies, grated egg, and a splash of tangy tamarind water (tok).</p>
+              <div class="card-footer">
+                <span>Street Corners Nationwide</span>
+                <span>Savory & Tangy</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Travel-to-Invigorate</h3>
+          <p style="font-size: 0.92rem; line-height: 1.7; color: #94a3b8;">
+            If you travel, you will not only learn about foreign cultures, but about your own as well. You will notice the cultural differences, and will find out what makes your culture unique. After returning from a long journey, you will see your country with new eyes.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/mdanwarulkarim" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a>
+            <a href="outdoor.html"><i class="fa-solid fa-angle-right"></i> Outdoor Activities</a>
+            <a href="indoor.html"><i class="fa-solid fa-angle-right"></i> Indoor Activities</a>
+            <a href="interestingplaces.html"><i class="fa-solid fa-angle-right"></i> Interesting Places</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Traveler Resources</h4>
+          <div class="footer-links">
+            <a href="PackingTips.html"><i class="fa-solid fa-angle-right"></i> Smart Packing Tips</a>
+            <a href="food.html"><i class="fa-solid fa-angle-right"></i> Traditional Cuisine</a>
+            <a href="language_tips.html"><i class="fa-solid fa-angle-right"></i> Bangla Language Guide</a>
+            <a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact & Support</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="footer-links">
+            <a href="https://goo.gl/maps/NkenkVLuLNDpVBSEA" target="_blank">
+              <i class="fa-solid fa-location-dot" style="color: var(--brand-primary);"></i>
+              Dhaka, Bangladesh
+            </a>
+            <a href="tel:+601112855248">
+              <i class="fa-solid fa-phone" style="color: var(--brand-primary);"></i>
+              +60-1112855248
+            </a>
+            <a href="mailto:karim247live@gmail.com">
+              <i class="fa-solid fa-envelope" style="color: var(--brand-primary);"></i>
+              karim247live@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Travel-to-Invigorate. Crafted by Md. Anwarul Karim.</span>
+        <span>Designed for Cultural & Heritage Exploration</span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

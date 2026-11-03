@@ -1,242 +1,219 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="utf-8">
-  <title>Indoor Activities</title>
-  <link rel="stylesheet" href="css/indoor.css">
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel-to-Invigorate | Discover Bangladesh With Style</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-
-  <header class=" container-fluid navbar navbar-expand-lg bg-light ">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="menu" id="hamburger">
-      <i class="fas fa-bars"></i>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <i class="fa-solid fa-compass" style="color: var(--brand-primary);"></i>
+        Travel<span>-to-</span>Invigorate
+      </a>
+      <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="">Home</a></li>
+          <li><a href="outdoor.html" class="">Outdoor</a></li>
+          <li><a href="indoor.html" class="active">Indoor</a></li>
+          <li><a href="interestingplaces.html" class="">Places</a></li>
+          <li><a href="PackingTips.html" class="">Packing</a></li>
+          <li><a href="food.html" class="">Food</a></li>
+          <li><a href="language_tips.html" class="">Language</a></li>
+          <li><a href="contact.html" class="">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark Mode" title="Toggle Dark/Light Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
     </div>
-    <div class=" list-inline-item text-md-start fs-5 fw-semibold">
-
-      <nav>
-        <h1 class="brand"><a href="index.html">Travel<span>-to-</span>invigorate</a></h1>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-bold text-light p-3">
-          <li class="nav-item">
-            <a class="nav-link active text-white " aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white " href="PackingTips.html">Packing</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link text-white " href="outdoor.html">Outdoor Activity</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white " href="language_tips.html">Language Tips</a>
-
-        </ul>
-      </nav>
-    </div>
-
-
   </header>
 
-  </section>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="hero-badge"><i class="fa-solid fa-building-columns"></i> Illuminating Mind & Soul</span>
+        <h1>Indoor Cultural & Rainy-Day Activities</h1>
+        <p>
+          Bangladesh is known for a lot of things. There are plenty of enriching indoor activities for a rainy day in Bangladesh that are illuminating for both the mind and soul.
+        </p>
+      </div>
+    </section>
 
-  <div id="banner">
-    <div id="threeColumns">
-      <div id="column1">
-        <a href="outdoor.html">
-
-          <div class="d-grid gap-3 col-6 mx-auto p-3">
-            <button class="btn btn-primary" type="button">Interesting Place</button>
-
+    <section class="section">
+      <div class="container">
+        <div class="filter-controls">
+          <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all">All Indoor Venues (5)</button>
+            <button class="filter-btn" data-filter="museum">History & Museums</button>
+            <button class="filter-btn" data-filter="art">Art & Crafts</button>
+            <button class="filter-btn" data-filter="science">Science & Planetarium</button>
           </div>
-
-        </a>
-      </div>
-      <div id="column2">
-
-      </div>
-      <div id="column3">
-        <a href="indoor2.html">
-          <div class="d-grid gap-3 col-6 mx-auto p-3">
-            <button class="btn btn-primary" type="button">Outdoor page</button>
-
-          </div>
-        </a>
-      </div>
-    </div>
-
-  </div>
-
-  <section id="banner">
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-
-      <div class="col" id="column1">
-        <div class="card">
-          <img src="/images/bagerhat.jpg" class="card-img-top " alt="...">
-          <div class="card-body">
-            <a href="#targetname">
-              <h3 class="card-title  text-center">List 1</h3>
-            </a>
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="searchInput" placeholder="Search museums, galleries, crafts..." />
           </div>
         </div>
-      </div>
-      <div class="col" id="column2">
-        <div class="card">
-          <img src="/images/bdair.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <a href="indoor2.html">
-              <h3 class="card-title text-center">List 2</h3>
-            </a>
 
+        <div class="grid-3">
+          <!-- 1. Liberation War Museum -->
+          <article class="card" data-category="museum">
+            <div class="card-img-wrap">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Liberation_War_Museum%2Cnew_building.jpg" alt="Liberation War Museum in Dhaka, Bangladesh" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Liberation_War_Museum,new_building.jpg" target="_blank" rel="noopener noreferrer">Photo: Ahm masum · CC BY-SA 4.0</a>
+              <span class="card-badge-overlay">1971 Independence</span>
+            </div>
+            <div class="card-body">
+              <h3>Liberation War Museum</h3>
+              <p>A monument to Bangladeshi independence and the 1971 war fought for freedom. Detailed English explanatory boards, archival photographs, rare documents, and documentary videos provide deep insight into the nation's struggle for nationhood.</p>
+              <a href="contact.html" class="card-footer">
+                <span><i class="fa-solid fa-location-dot"></i> Agargaon, Dhaka</span>
+                <span>Inquire Visit &rarr;</span>
+              </a>
+            </div>
+          </article>
 
-          </div>
+          <!-- 2. Sukanta's Dhamrai Metal Crafts -->
+          <article class="card" data-category="art">
+            <div class="card-img-wrap">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Dhamrai_Metal_Crafts_Workshop_%2827659172860%29.jpg/960px-Dhamrai_Metal_Crafts_Workshop_%2827659172860%29.jpg" alt="Metal crafts workshop in Dhamrai, Bangladesh" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Dhamrai_Metal_Crafts_Workshop_(27659172860).jpg" target="_blank" rel="noopener noreferrer">Photo: David Stanley · CC BY 2.0</a>
+              <span class="card-badge-overlay">Lost-Wax Heritage</span>
+            </div>
+            <div class="card-body">
+              <h3>Sukanta's Dhamrai Metal Crafts</h3>
+              <p>Extraordinary traditional brass and bronze handicrafts! A must-visit heritage home and workshop in Dhamrai where a welcoming artisan family demonstrates centuries-old metal casting craftsmanship firsthand.</p>
+              <a href="contact.html" class="card-footer">
+                <span><i class="fa-solid fa-location-dot"></i> Dhamrai, Dhaka</span>
+                <span>Book Workshop &rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 3. Independence Museum -->
+          <article class="card" data-category="museum">
+            <div class="card-img-wrap">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Central_Rotunda_with_Light-infused_Water_Pillar_-_Museum_of_Independence_-_Suhrawardy_Udyan_-_Dhaka_2015-05-31_2177-2181.tif/lossy-page1-960px-Central_Rotunda_with_Light-infused_Water_Pillar_-_Museum_of_Independence_-_Suhrawardy_Udyan_-_Dhaka_2015-05-31_2177-2181.tif.jpg" alt="Central rotunda of the Museum of Independence in Dhaka" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Central_Rotunda_with_Light-infused_Water_Pillar_-_Museum_of_Independence_-_Suhrawardy_Udyan_-_Dhaka_2015-05-31_2177-2181.tif" target="_blank" rel="noopener noreferrer">Photo: Biswarup Ganguly · CC BY 3.0</a>
+              <span class="card-badge-overlay">Underground Museum</span>
+            </div>
+            <div class="card-body">
+              <h3>Independence Museum</h3>
+              <p>The first and only underground museum in Bangladesh, tracing the nation's history from the Mughal era to independence in 1971. Located inside the 67-acre Suhrawardy Udyan complex where the historic March 7 speech and 1971 surrender took place.</p>
+              <a href="contact.html" class="card-footer">
+                <span><i class="fa-solid fa-location-dot"></i> Suhrawardy Udyan, Dhaka</span>
+                <span>Plan Tour &rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 4. Drik Gallery -->
+          <article class="card" data-category="art">
+            <div class="card-img-wrap">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Dhanmondi_Dhaka_Drik_Gallery_Photography_Exhibition_October_2015_%28PID-0057807%29.jpg" alt="Photography exhibition at Drik Gallery in Dhaka" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Dhanmondi_Dhaka_Drik_Gallery_Photography_Exhibition_October_2015_(PID-0057807).jpg" target="_blank" rel="noopener noreferrer">Photo: Press Information Department · Public domain</a>
+              <span class="card-badge-overlay">Photography & Art</span>
+            </div>
+            <div class="card-body">
+              <h3>Drik Gallery, Dhaka</h3>
+              <p>Premier visual arts and documentary photography exhibition venue in Dhaka. Features upscale, centrally air-conditioned exhibition halls, well-marked gallery stalls, a curated library, and a cozy artist coffee shop.</p>
+              <a href="contact.html" class="card-footer">
+                <span><i class="fa-solid fa-location-dot"></i> Panthapath, Dhaka</span>
+                <span>Check Exhibitions &rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 5. Novo Theatre -->
+          <article class="card" data-category="science">
+            <div class="card-img-wrap">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Bangabandhu_Sheikh_Mujibur_Rahman_Novo_Theatre_%2808%29.jpg/960px-Bangabandhu_Sheikh_Mujibur_Rahman_Novo_Theatre_%2808%29.jpg" alt="Bangabandhu Sheikh Mujibur Rahman Novo Theatre in Dhaka" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Bangabandhu_Sheikh_Mujibur_Rahman_Novo_Theatre_(08).jpg" target="_blank" rel="noopener noreferrer">Photo: Nahid Sultan · CC BY-SA 4.0</a>
+              <span class="card-badge-overlay">Space & Planetarium</span>
+            </div>
+            <div class="card-body">
+              <h3>Novo Theatre</h3>
+              <p>Opened on 25 September 2004, this iconic space center features sharp angular architecture contrasting with a central futuristic planetarium dome. Houses astronomy exhibits, virtual simulator rides, 5D shows, and a ground-floor cafe.</p>
+              <a href="contact.html" class="card-footer">
+                <span><i class="fa-solid fa-location-dot"></i> Bijoy Sarani, Dhaka</span>
+                <span>Show Timings &rarr;</span>
+              </a>
+            </div>
+          </article>
         </div>
       </div>
-      <div class="col" id="column3">
-        <div class="card">
-          <img src="/images/barishal.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <a href="indoor2.html">
-              <h3 class="card-title text-center">List 3</h3>
-            </a>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div id="fullWidth1">
-    <div id="section0" class="m-5 p-5 text-center border border-3 bg-info">
-      <h3 class=" text-primary text-uppercase">Indoor Activities page</h3>
-      <br>
-      <p>
-      <h5 class="text-bold ">Bangladesh is known for a lot of things. There are a lot of Activities for a Rainy Day to
-        do in Bangladesh.
-        Those are both illuminating for the mind and soul. </h5>
-      </p>
-
-    </div>
-    <!-- museum list start -->
-    <section class="container ">
-      <div class="card mb-3 border border-2 ">
-
-        <img src="images/warmu.PNG" class="w-50 card-img-top " alt="War Museum Picture">
-        <div class="card-body">
-          <a name="target name">
-            <h2>Liberation War <span id="white">Museum</span></h2>
-          </a>
-          <p>
-          <h5>
-            This museum is a monument to Bangladeshi independence and the war fought with Pakistan for freedom. The
-            exterior is under major renovation and you have to slog through mud to get to it. But by all means get
-            there. There are enough English explanatory boards so that you can truly understand the atrocities. The
-            displays, photos, and videos are harrowing but provide true insight into the Bangladeshi struggles for
-            nationhood.
-          </h5>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Travel-to-Invigorate</h3>
+          <p style="font-size: 0.92rem; line-height: 1.7; color: #94a3b8;">
+            If you travel, you will not only learn about foreign cultures, but about your own as well. You will notice the cultural differences, and will find out what makes your culture unique. After returning from a long journey, you will see your country with new eyes.
           </p>
-          <p class="card-text"><small class="text-muted">If you need check contact page</small></p>
+          <div class="social-links">
+            <a href="https://github.com/mdanwarulkarim" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a>
+            <a href="outdoor.html"><i class="fa-solid fa-angle-right"></i> Outdoor Activities</a>
+            <a href="indoor.html"><i class="fa-solid fa-angle-right"></i> Indoor Activities</a>
+            <a href="interestingplaces.html"><i class="fa-solid fa-angle-right"></i> Interesting Places</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Traveler Resources</h4>
+          <div class="footer-links">
+            <a href="PackingTips.html"><i class="fa-solid fa-angle-right"></i> Smart Packing Tips</a>
+            <a href="food.html"><i class="fa-solid fa-angle-right"></i> Traditional Cuisine</a>
+            <a href="language_tips.html"><i class="fa-solid fa-angle-right"></i> Bangla Language Guide</a>
+            <a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact & Support</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="footer-links">
+            <a href="https://goo.gl/maps/NkenkVLuLNDpVBSEA" target="_blank">
+              <i class="fa-solid fa-location-dot" style="color: var(--brand-primary);"></i>
+              Dhaka, Bangladesh
+            </a>
+            <a href="tel:+601112855248">
+              <i class="fa-solid fa-phone" style="color: var(--brand-primary);"></i>
+              +60-1112855248
+            </a>
+            <a href="mailto:karim247live@gmail.com">
+              <i class="fa-solid fa-envelope" style="color: var(--brand-primary);"></i>
+              karim247live@gmail.com
+            </a>
+          </div>
         </div>
       </div>
 
-      <div class="card mb-3 border border-2">
-
-        <div id="section2">
-
-          <img src="images/sukanta.PNG" class="w-50 card-img-top " alt="Sukanta Picture">
-
-          <h2>Sukanta's Dhamrai <span id="purple">Metal Crafts</span></h2>
-
-          <p>Excellent handy crafts!! Must visit place in Dhaka Bangladesh. Fantastic location and house. Friendly
-            family with extra ordinary craftsmanship.</p>
-        </div>
-        </p>
-        <p class="card-text"><small class="text-muted">If you need check contact page</small></p>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Travel-to-Invigorate. Crafted by Md. Anwarul Karim.</span>
+        <span>Designed for Cultural & Heritage Exploration</span>
       </div>
-  </div>
-
-  <div class="card mb-3 border border-2 container">
-
-    <img src="images/indi.PNG" class="w-50 card-img-top " alt="War Museum Picture">
-    <div class="card-body">
-      <a name="target name">
-        <h2>Independence <span id="white">Museum</span></h2>
-      </a>
-      <p>
-      <h5>
-        <p>The Museum of Independence in Dhaka, Bangladesh depicts the struggle for independence of Bangladesh. It
-          shows the history of the nation since Mughal tenure to independence in 1971. It is the first and only
-          underground museum in the country. The museum is part of a 67-acre complex at Suhrawardy Udyan, the site
-          from where Sheikh Mujibur Rahman gave his historic speech declaring the struggle for independence, and
-          where the Pakistani forces surrendered after the War of Liberation. The museum was opened to public on
-          March 25, 2015, the 45th Independence Day of Bangladesh.</p>
-      </h5>
-      </p>
-      <p class="card-text"><small class="text-muted">If you need check contact page</small></p>
     </div>
-  </div>
-
-  <div class="card mb-3 border border-2 container">
-
-    <img src="images/drik.PNG" class="w-50 card-img-top " alt="War Museum Picture">
-    <div class="card-body">
-      <a name="target name">
-        <h2>Drik <span id="orange">Gallery, </span>Dhaka</h2>
-      </a>
-      <p>
-      <h5>
-        <p>Usually, they sponsor Art and photography exhibitions. Upscale exhibition halls. They also have one
-          coffee shop and Library. The place is nicely decorated with all modern amenities, well-marked and
-          separated stalls, central air-conditioning.</p>
-      </h5>
-      </p>
-      <p class="card-text"><small class="text-muted">If you need check contact page</small></p>
-    </div>
-  </div>
-
-  <div class="card mb-3 border border-2 container">
-
-    <img src="images/novo.PNG" class="w-50 card-img-top " alt="War Museum Picture">
-    <div class="card-body">
-      <a name="target name">
-        <h2>Novo <span id="white">Theatre</span></h2>
-      </a>
-      <p>
-      <h5>
-        <p>The Bangabandhu Sheikh Mujibur Rahman Novo Theatre opened to public on 25 September 2004. It was
-          previously named Bhashani Novo Theatre. It was made autonomous by Bangabandhu Sheikh Mujibur Rahman
-          Novo Theatre Bill 2010. The space center was commissioned by the Ministry of Science and
-          Communication Technology of the Government of Bangladesh. Sharp, angular architecture contrasts with
-          a central, futuristic dome and well mantained grounds over a wide area. A cavernous feel to the
-          interior which houses a sprinkling of space related posters and exhibits, a virtual show and cafe.
-        </p>
-      </h5>
-      </p>
-      <p class="card-text"><small class="text-muted">If you need check contact page</small></p>
-    </div>
-  </div>
-
-  </section>
-
-
-
-
-
-
-
-
-
-
+  </footer>
+  <script src="script.js"></script>
 </body>
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-
 </html>

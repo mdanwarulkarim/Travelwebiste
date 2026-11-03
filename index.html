@@ -1,229 +1,295 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="utf-8">
-  <title>TRAVEL-TO-INVIGORATE</title>
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/fot.css">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
-  <!-- font awesome -->
-  <script src="https://kit.fontawesome.com/20e18a73c1.js" crossorigin="anonymous"></script>
-
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel-to-Invigorate | Discover Bangladesh With Style</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-
-  <header class="container-fluid ">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="menu" id="hamburger">
-      <i class="fas fa-bars"></i>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <i class="fa-solid fa-compass" style="color: var(--brand-primary);"></i>
+        Travel<span>-to-</span>Invigorate
+      </a>
+      <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="outdoor.html" class="">Outdoor</a></li>
+          <li><a href="indoor.html" class="">Indoor</a></li>
+          <li><a href="interestingplaces.html" class="">Places</a></li>
+          <li><a href="PackingTips.html" class="">Packing</a></li>
+          <li><a href="food.html" class="">Food</a></li>
+          <li><a href="language_tips.html" class="">Language</a></li>
+          <li><a href="contact.html" class="">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark Mode" title="Toggle Dark/Light Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
     </div>
-
-    <div class="  justify-content: space-evenly align-items-center  ">
-      <nav class="navbar navbar-expand-lg ">
-        <h1 class="brand"><a href="index.html">Travel<span>-to-</span>invigorate</a></h1>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0  p-3">
-          <li class="nav-item">
-            <a class="nav-link active text-white " aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white " href="indoor2.html">OUTDOOR ACTIVITY</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link text-white " href="indoor.html">Indoor Activity</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white " href="contact.html">Contact</a>
-
-        </ul>
-
-        <form class="d-flex " role="search">
-          <input class="form-control ms-5 " type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-lg btn-outline-success ms-3" type="submit">Search</button>
-        </form>
-    </div>
-
-
-    </nav>
-    </div>
-
-    <section id="intro">
-      <div class="intro-container">
-        <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
-
-          <ol class="carousel-indicators"></ol>
-
-          <div class="carousel-inner" role="listbox">
-
-            <div class="carousel-item active">
-              <div class="carousel-container">
-                <div class="carousel-content">
-
-                  <h2>Travel With Style</h2>
-                  <p>If you travel, you will not only learn about foreign cultures, but about your own as well. You will
-                    notice the cultural differences, and will find out what makes your culture unique. After retrurning
-                    from a long journey, you will see your country with new eyes.</p>
-                  <a href="interestingplaces.html" target="_blank" class="btn btn-lg btn-get-started scrollto"><button
-                      class="button"><span>Interesting Places</span></button></a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-    </section>
   </header>
 
-
-  <!-- 4 box start -->
-
-  <section class="container ">
-    <div class="nvv">
-
-
-      <div class="hd">
-        <h1>Travel Helps Us Grow As Human</h1>
-      </div>
-
-      <div class="new">
-        <div class="n">
-          <h2 class="m-3">Packing Tips</h2>
-          <h3>Here you will get awesome packing Tips</h3><br><br>
-          <a href="PackingTips.html" class=" btn btn-lg btn-get-started scrollto">
-
-            <button class="button"><span>Pack Smart</span></button></a>
-
-        </div>
-        <div class="n">
-          <h2 class="m-3">Interesting Place</h2> <br>
-          <h3>Please to visit</h3><br><br>
-          <a href="interestingplaces.html" class="btn btn-lg btn-get-started scrollto">
-
-            <button class="button"><span>Don't miss this</span></button></a>
-        </div>
-        <div class="n">
-          <h2 class="m-3">Traditional Food</h2> <br>
-          <h3>Your Favorite Cuisine</h3><br><br>
-          <a href="sadia.html" class=" btn btn-lg btn-get-started scrollto">
-
-            <button class="button"><span>Local Cuisine</span></button></a>
-
-        </div>
-        <div class="n">
-          <h2 class="m-3">Language tips</h2> <br>
-          <h3>Talk Like a Local</h3><br><br>
-          <a href="language_tips.html" class=" btn btn-lg btn-get-started scrollto">
-
-            <button class="button"><span>Local Language</span></button></a>
-
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- 4 box end -->
-
-
-  <div class="footer">
-    <div class="inner-footer">
-
-      <div class="footer-items1">
-        <h1>TRAVEL-TO-INVIGORATE</h1>
-        <div class="border"></div>
-        <p>If you travel, you will not only learn about foreign cultures, but about your own as well. You will notice
-          the cultural differences, and will find out what makes your culture unique. After retrurning from a long
-          journey, you will see your country with new eyes.
+  <main>
+    <section class="hero" style="background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Save_the_sundarbans_20.jpg/1920px-Save_the_sundarbans_20.jpg');">
+      <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Save_the_sundarbans_20.jpg" target="_blank" rel="noopener noreferrer">Photo: Shihabur Rahman · CC BY-SA 4.0</a>
+      <div class="hero-content">
+        <div class="hero-badge"><i class="fa-solid fa-earth-asia"></i> Cultural & Heritage Guide</div>
+        <h1>Travel With Style</h1>
+        <p>
+          If you travel, you will not only learn about foreign cultures, but about your own as well. You will notice the cultural differences, and will find out what makes your culture unique. After returning from a long journey, you will see your country with new eyes.
         </p>
+        <div class="hero-buttons">
+          <a href="interestingplaces.html" class="btn btn-primary"><i class="fa-solid fa-map-location-dot"></i> Explore Destinations</a>
+          <a href="outdoor.html" class="btn btn-outline"><i class="fa-solid fa-mountain-sun"></i> Outdoor Adventures</a>
+        </div>
       </div>
+    </section>
 
-      <div class="footer-items">
-        <h2>Quick Links</h2>
-        <div class="border"></div>
-        <ul>
-          <a href="index.html">
-            <li><i class="fa fa-home" aria-hidden="true"></i>Home</li>
-          </a>
-          <a href="outdoor.html">
-            <li><i class="fa fa-user-circle" aria-hidden="true"></i>Outdoor Activities</li>
-          </a>
-          <a href="indoor.html">
-            <li><i class="fa fa-info-circle" aria-hidden="true"></i>Indoor Activities</li>
-          </a>
-          <a href="#">
-            <li><i class="fa fa-rss" aria-hidden="true"></i>Blog</li>
-          </a>
-        </ul>
-      </div>
-
-      <div class="footer-items">
-        <h2>General User view </h2>
-        <div class="border"></div>
-        <ul>
-          <a href="PackingTips.html">
-            <li><i class="fa fa-shopping-bag" aria-hidden="true"></i>Packing</li>
-          </a>
-          <a href="interestingplaces.html">
-            <li><i class="fa fa-globe" aria-hidden="true"></i>Interesting places
-            </li>
-          </a>
-          <a href="indoor.html">
-            <li><i class="fa fa-list" aria-hidden="true"></i>To do list
-            </li>
-          </a>
-          <a href="sadia.html">
-            <li><i class="fa fa-cutlery" aria-hidden="true"></i>Food</li>
-          </a>
-        </ul>
-      </div>
-
-      <div class="footer-items">
-        <h2>contact us</h2>
-        <div class="border"></div>
-        <ul>
-          <a href="https://goo.gl/maps/NkenkVLuLNDpVBSEA" target="_blank">
-            <li><i class="fa fa-map-marker" aria-hidden="true"></i>Jalan Gombak, 53100, Selangor</li>
-          </a>
-          <a href="#">
-            <li><i class="fa fa-phone-square" aria-hidden="true"></i>+60-1112855248</li>
-          </a>
-          <a href="#">
-            <li><i class="fa fa-envelope-open-o" aria-hidden="true"></i>karim247live@gmail.com</li>
-          </a>
-        </ul>
-
-        <div class="social">
-          <ul>
-            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"
-                aria-hidden="true"></i></a>
-            <a href="https://twitter.com/google" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            <a href="https://myaccount.google.com/" target="_blank"><i class="fa fa-google-plus"
-                aria-hidden="true"></i></a>
-          </ul>
-
+    <section class="section" id="home-guides">
+      <div class="container">
+        <div class="section-header">
+          <span class="tag-badge">Why We Explore</span>
+          <h2>Travel Helps Us Grow As Humans</h2>
+          <p>Everything you need to plan an unforgettable journey through the rivers, hills, museums, and culinary heritage of Bangladesh.</p>
         </div>
 
+        <div class="grid-4">
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80" alt="Packing Tips" />
+              <span class="card-badge-overlay">6 Essential Rules</span>
+            </div>
+            <div class="card-body">
+              <h3>Packing Tips</h3>
+              <p>Here you will get awesome packing tips and an interactive travel checklist so you never forget an essential item or overpay airline baggage fees.</p>
+              <a href="PackingTips.html" class="card-footer">
+                <span>Read Packing Guide</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Sunrise_at_Sajek_Valley.jpg/960px-Sunrise_at_Sajek_Valley.jpg" alt="Sajek Valley, Bangladesh" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Sunrise_at_Sajek_Valley.jpg" target="_blank" rel="noopener noreferrer">Photo: Masum-al-Hasan Rocky · CC BY-SA 4.0</a>
+              <span class="card-badge-overlay">Must-Visit Spots</span>
+            </div>
+            <div class="card-body">
+              <h3>Interesting Places</h3>
+              <p>Discover curated outdoor wonders, indoor museums, cloud-kissed valleys, and unique regional transportation across Bangladesh.</p>
+              <a href="interestingplaces.html" class="card-footer">
+                <span>Explore Places</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/The_unique_culture_of_hospitality%2C_the_Mejbani_Bhoj.jpg/960px-The_unique_culture_of_hospitality%2C_the_Mejbani_Bhoj.jpg" alt="Traditional Chittagong Mezbani feast in Bangladesh" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:The_unique_culture_of_hospitality,_the_Mejbani_Bhoj.jpg" target="_blank" rel="noopener noreferrer">Photo: Mohammad Shajahan · CC BY-SA 4.0</a>
+              <span class="card-badge-overlay">Bangaliketa</span>
+            </div>
+            <div class="card-body">
+              <h3>Traditional Food</h3>
+              <p>Explore your favorite Bangladeshi cuisine—from iconic fish and rice, aromatic Mughlai Kacchi Biryani, and crispy Fuchka to Roshogolla sweets.</p>
+              <a href="food.html" class="card-footer">
+                <span>Taste the Cuisine</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=800&q=80" alt="Language Tips" />
+              <span class="card-badge-overlay">4.7/5 Rated</span>
+            </div>
+            <div class="card-body">
+              <h3>Language Tips</h3>
+              <p>Talk like a local! Master basic Bangla greetings, food phrases, numbers, and directions with interactive audio pronunciation.</p>
+              <a href="language_tips.html" class="card-footer">
+                <span>Learn Basic Bangla</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section trip-finder-section">
+      <div class="container">
+        <div class="trip-finder-panel">
+          <div class="trip-finder-copy">
+            <span class="tag-badge"><i class="fa-solid fa-wand-magic-sparkles"></i> Your Bangladesh Trip</span>
+            <h2>What kind of day are you dreaming of?</h2>
+            <p>Pick a travel mood and get a little inspiration for where to go next.</p>
+            <div class="trip-mood-options" role="group" aria-label="Choose your travel mood">
+              <button class="trip-mood-btn" type="button" data-trip-mood="nature" aria-pressed="false">
+                <i class="fa-solid fa-mountain-sun"></i> Nature & Adventure
+              </button>
+              <button class="trip-mood-btn" type="button" data-trip-mood="culture" aria-pressed="false">
+                <i class="fa-solid fa-landmark"></i> Culture & History
+              </button>
+              <button class="trip-mood-btn" type="button" data-trip-mood="food" aria-pressed="false">
+                <i class="fa-solid fa-bowl-food"></i> Food & Flavors
+              </button>
+            </div>
+          </div>
+          <div class="trip-suggestion" id="tripSuggestion" aria-live="polite" aria-atomic="true">
+            <div class="trip-suggestion-icon" aria-hidden="true"><i class="fa-solid fa-compass"></i></div>
+            <div>
+              <span class="trip-suggestion-label">A little inspiration</span>
+              <h3 id="tripSuggestionTitle">Your next story starts here</h3>
+              <p id="tripSuggestionText">Choose a mood and we’ll point you toward a place to explore.</p>
+              <a class="trip-suggestion-link" id="tripSuggestionLink" href="interestingplaces.html">
+                Explore the guides <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+            <button class="trip-surprise-btn" id="tripSurpriseBtn" type="button" aria-label="Surprise me with a destination" title="Surprise me">
+              <i class="fa-solid fa-shuffle"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container" id="featuredGrid">
+        <div class="section-header">
+          <span class="tag-badge">Featured Highlights</span>
+          <h2>Iconic Experiences Across Bangladesh</h2>
+          <p>Whether you prefer trekking through mist-covered hills or exploring underground architectural museums on a rainy day in Dhaka.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Save_the_sundarbans_20.jpg/960px-Save_the_sundarbans_20.jpg" alt="Sundarbans East Wildlife Sanctuary, Bangladesh" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Save_the_sundarbans_20.jpg" target="_blank" rel="noopener noreferrer">Photo: Shihabur Rahman · CC BY-SA 4.0</a>
+              <span class="card-badge-overlay">UNESCO Heritage</span>
+            </div>
+            <div class="card-body">
+              <h3>Mangrove Sundarbans</h3>
+              <p>The largest mangrove forest on earth and home to the Royal Bengal Tiger. A tranquil, once-in-a-lifetime ecological expedition.</p>
+              <a href="outdoor.html" class="card-footer">
+                <span>Outdoor Activities</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Sunrise_at_Sajek_Valley.jpg/960px-Sunrise_at_Sajek_Valley.jpg" alt="Sunrise in Sajek Valley, Bangladesh" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Sunrise_at_Sajek_Valley.jpg" target="_blank" rel="noopener noreferrer">Photo: Masum-al-Hasan Rocky · CC BY-SA 4.0</a>
+              <span class="card-badge-overlay">Hill Tracts</span>
+            </div>
+            <div class="card-body">
+              <h3>Cloud Valley, Sajek</h3>
+              <p>Experience clouds brushing right past you on the mountain ridges of Rangamati and the Chittagong Hill Tracts.</p>
+              <a href="indoor2.html" class="card-footer">
+                <span>View Hill Spots</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Liberation_War_Museum%2Cnew_building.jpg" alt="Liberation War Museum in Dhaka, Bangladesh" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Liberation_War_Museum,new_building.jpg" target="_blank" rel="noopener noreferrer">Photo: Ahm masum · CC BY-SA 4.0</a>
+              <span class="card-badge-overlay">Dhaka Heritage</span>
+            </div>
+            <div class="card-body">
+              <h3>Liberation War & National Museums</h3>
+              <p>Illuminating indoor galleries, planetariums, and traditional metal crafts in Dhamrai that celebrate the soul of the nation.</p>
+              <a href="indoor.html" class="card-footer">
+                <span>Indoor Cultural Guide</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Travel-to-Invigorate</h3>
+          <p style="font-size: 0.92rem; line-height: 1.7; color: #94a3b8;">
+            If you travel, you will not only learn about foreign cultures, but also learn different feelings and perspectives.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/mdanwarulkarim" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a>
+            <a href="outdoor.html"><i class="fa-solid fa-angle-right"></i> Outdoor Activities</a>
+            <a href="indoor.html"><i class="fa-solid fa-angle-right"></i> Indoor Activities</a>
+            <a href="interestingplaces.html"><i class="fa-solid fa-angle-right"></i> Interesting Places</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Traveler Resources</h4>
+          <div class="footer-links">
+            <a href="PackingTips.html"><i class="fa-solid fa-angle-right"></i> Smart Packing Tips</a>
+            <a href="food.html"><i class="fa-solid fa-angle-right"></i> Traditional Cuisine</a>
+            <a href="language_tips.html"><i class="fa-solid fa-angle-right"></i> Bangla Language Guide</a>
+            <a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact & Support</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="footer-links">
+            <a href="https://goo.gl/maps/NkenkVLuLNDpVBSEA" target="_blank">
+              <i class="fa-solid fa-location-dot" style="color: var(--brand-primary);"></i>
+              Dhaka, Bangladesh
+            </a>
+            <a href="tel:+601112855248">
+              <i class="fa-solid fa-phone" style="color: var(--brand-primary);"></i>
+              +60-1112855248
+            </a>
+            <a href="mailto:karim247live@gmail.com">
+              <i class="fa-solid fa-envelope" style="color: var(--brand-primary);"></i>
+              karim247live@gmail.com
+            </a>
+          </div>
+        </div>
       </div>
 
+      <div class="footer-bottom">
+        <span>&copy; 2026 Travel-to-Invigorate. Crafted by Md. Anwarul Karim.</span>
+        <span>Designed for Cultural & Heritage Exploration</span>
+      </div>
     </div>
-
-  </div>
-
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
+  </footer>
+  <div class="page-scroll-progress" id="pageScrollProgress" aria-hidden="true"></div>
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top" title="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+  <script src="script.js"></script>
 </body>
-
 </html>

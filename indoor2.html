@@ -1,203 +1,287 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="utf-8">
-  <title>Indoor Activities</title>
-  <link rel="stylesheet" href="css/indoor.css">
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel-to-Invigorate | Discover Bangladesh With Style</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-
-
-  <header class=" container-fluid navbar navbar-expand-lg bg-light ">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="menu" id="hamburger">
-      <i class="fas fa-bars"></i>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <i class="fa-solid fa-compass" style="color: var(--brand-primary);"></i>
+        Travel<span>-to-</span>Invigorate
+      </a>
+      <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="">Home</a></li>
+          <li><a href="outdoor.html" class="active">Outdoor</a></li>
+          <li><a href="indoor.html" class="">Indoor</a></li>
+          <li><a href="interestingplaces.html" class="">Places</a></li>
+          <li><a href="PackingTips.html" class="">Packing</a></li>
+          <li><a href="food.html" class="">Food</a></li>
+          <li><a href="language_tips.html" class="">Language</a></li>
+          <li><a href="contact.html" class="">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark Mode" title="Toggle Dark/Light Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
     </div>
-    <div class=" list-inline-item text-md-start fs-5 fw-semibold">
-
-      <nav>
-        <h1 class="brand"><a href="index.html">Travel<span>-to-</span>invigorate</a></h1>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-bold text-light p-3">
-          <li class="nav-item">
-            <a class="nav-link active text-white " aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white " href="PackingTips.html">Packing</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link text-white " href="outdoor.html">Outdoor Activity</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white " href="language_tips.html">Language Tips</a>
-
-        </ul>
-      </nav>
-    </div>
-
-
   </header>
 
-  <section>
-    <!-- colum button start  -->
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="hero-badge"><i class="fa-solid fa-tree"></i> Nature, Hills & UNESCO Heritage</span>
+        <h1>Outdoor Activities & Iconic Landmarks</h1>
+        <p>
+          Bangladesh is known for its lush greenery, the Royal Bengal Tiger, the longest natural sea beach in the world, and misty hill tracts. Explore our top-ranked outdoor destinations below.
+        </p>
+      </div>
+    </section>
 
-    <div id="banner">
-      <div id="threeColumns">
-        <div id="column1">
-          <a href="#targetname">
+    <section class="section">
+      <div class="container">
+        <div class="filter-controls">
+          <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all">All Destinations (9)</button>
+            <button class="filter-btn" data-filter="nature">Nature & Forests</button>
+            <button class="filter-btn" data-filter="hills">Hills & Valleys</button>
+            <button class="filter-btn" data-filter="heritage">Heritage & Resorts</button>
+          </div>
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="searchInput" placeholder="Search Sundarbans, Sajek, Srimangal..." />
+          </div>
+        </div>
 
-            <div class="d-grid gap-3 col-6 mx-auto p-3">
-              <button class="btn btn-primary" type="button">Outdoor Page</button>
-
+        <div class="grid-3">
+          <!-- 1. Mangrove Sundarbans -->
+          <article class="card" data-category="nature">
+            <div class="card-img-wrap">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Save_the_sundarbans_20.jpg/960px-Save_the_sundarbans_20.jpg" alt="Sundarbans East Wildlife Sanctuary, Bangladesh" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Save_the_sundarbans_20.jpg" target="_blank" rel="noopener noreferrer">Photo: Shihabur Rahman · CC BY-SA 4.0</a>
+              <span class="card-badge-overlay">#1 Ranked &bull; UNESCO</span>
             </div>
-
-          </a>
-        </div>
-        <div id="column2">
-
-        </div>
-        <div id="column3">
-          <a href="indoor.html">
-            <div class="d-grid gap-3 col-6 mx-auto p-3">
-              <button class="btn btn-primary" type="button">Indoor page</button>
-
+            <div class="card-body">
+              <h3>Mangrove Sundarbans</h3>
+              <p>Sundarbans is the largest mangrove forest on earth and a UNESCO World Heritage site located between Bangladesh and India, with the majority in Bangladesh. It is home to the last remaining Royal Bengal tigers and diverse wildlife. Visiting this tranquil forest is a once-in-a-lifetime experience.</p>
+              <div class="card-footer">
+                <span><i class="fa-solid fa-location-dot"></i> Khulna / Satkhira</span>
+                <span>Wildlife & Boat Safari</span>
+              </div>
             </div>
-          </a>
+          </article>
+
+          <!-- 2. Chittagong Hill-Tracts -->
+          <article class="card" data-category="hills">
+            <div class="card-img-wrap">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Sunrise_at_Sajek_Valley.jpg/960px-Sunrise_at_Sajek_Valley.jpg" alt="Sunrise in Sajek Valley, Bangladesh" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Sunrise_at_Sajek_Valley.jpg" target="_blank" rel="noopener noreferrer">Photo: Masum-al-Hasan Rocky · CC BY-SA 4.0</a>
+              <span class="card-badge-overlay">#2 Ranked &bull; Adventure</span>
+            </div>
+            <div class="card-body">
+              <h3>Chittagong Hill-Tracts</h3>
+              <p>A naturally breathtaking region full of hills and home to many indigenous communities of Bangladesh. It is the premier destination for multi-day hill trekking and boat rides along the stunning Sangu River during monsoon.</p>
+              <div class="card-footer">
+                <span><i class="fa-solid fa-location-dot"></i> Bandarban / Sangu River</span>
+                <span>Trekking & Culture</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Tea of Srimangal -->
+          <article class="card" data-category="nature">
+            <div class="card-img-wrap">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/City_of_Tea_Mountains%2C_Srimongol_%28%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%AE%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A6%B2%29.jpg/960px-City_of_Tea_Mountains%2C_Srimongol_%28%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%AE%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A6%B2%29.jpg" alt="Green tea gardens across the rolling hills of Sreemangal, Bangladesh" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:City_of_Tea_Mountains,_Srimongol_(%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%AE%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A6%B2).jpg" target="_blank" rel="noopener noreferrer">Photo: Syed Sajidul Islam · CC BY-SA 4.0</a>
+              <span class="card-badge-overlay">#3 Ranked &bull; Tea Capital</span>
+            </div>
+            <div class="card-body">
+              <h3>Enjoy the Tea of Sreemangal</h3>
+              <p>Sreemangal is the tea capital of Bangladesh in the north-east. Cycle through peaceful trails inside lush green tea plantations, explore Lawachhara National Park, and trek to the scenic Hamham Waterfalls.</p>
+              <div class="card-footer">
+                <span><i class="fa-solid fa-location-dot"></i> Sylhet Division</span>
+                <span>Cycling & Rainforest</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Rangamati, Kaptai and Lake -->
+          <article class="card" data-category="hills">
+            <div class="card-img-wrap">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Hanging_Bridge%2C_Kaptai_Lake.jpg/960px-Hanging_Bridge%2C_Kaptai_Lake.jpg" alt="Hanging Bridge over Kaptai Lake, Rangamati" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Hanging_Bridge,_Kaptai_Lake.jpg" target="_blank" rel="noopener noreferrer">Photo: Shakhawat Hossen Shafat · CC BY-SA 4.0</a>
+              <span class="card-badge-overlay">#4 Ranked &bull; Lake Cruise</span>
+            </div>
+            <div class="card-body">
+              <h3>Rangamati, Kaptai & Lake</h3>
+              <p>Famous for the expansive Kaptai Lake surrounded by emerald hills. Enjoy a full-day boat ride across the water, shop for fine handmade tribal fabrics at local handicraft markets, and visit the serene Rajban Bihar Buddhist monastery.</p>
+              <div class="card-footer">
+                <span><i class="fa-solid fa-location-dot"></i> Rangamati District</span>
+                <span>Boating & Handicrafts</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. Archeological Paharpur -->
+          <article class="card" data-category="heritage">
+            <div class="card-img-wrap">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Aerial_view_of_Somapura_Mahavihara.jpg/960px-Aerial_view_of_Somapura_Mahavihara.jpg" alt="Aerial view of Somapura Mahavihara, Paharpur, Bangladesh" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Aerial_view_of_Somapura_Mahavihara.jpg" target="_blank" rel="noopener noreferrer">Photo: Md. Ahsanul Haque Nayem · CC BY-SA 4.0</a>
+              <span class="card-badge-overlay">#5 Ranked &bull; 8th Century</span>
+            </div>
+            <div class="card-body">
+              <h3>Archeological Paharpur</h3>
+              <p>Home to Somapura Mahavihara, the most impressive archaeological site in Bangladesh and a UNESCO World Heritage site. Built in the 8th century, it was the second-largest Buddhist monastery south of the Himalayas where scholars gathered from across Asia.</p>
+              <div class="card-footer">
+                <span><i class="fa-solid fa-location-dot"></i> Naogaon, Rajshahi</span>
+                <span>Ancient Architecture</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. Cloud Valley, Sajek -->
+          <article class="card" data-category="hills">
+            <div class="card-img-wrap">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Sunrise_at_Sajek_Valley.jpg/960px-Sunrise_at_Sajek_Valley.jpg" alt="Cloud-covered hills at sunrise in Sajek Valley, Bangladesh" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Sunrise_at_Sajek_Valley.jpg" target="_blank" rel="noopener noreferrer">Photo: Masum-al-Hasan Rocky · CC BY-SA 4.0</a>
+              <span class="card-badge-overlay">Cloud Paradise</span>
+            </div>
+            <div class="card-body">
+              <h3>Cloud Valley, Sajek</h3>
+              <p>One of the most popular mountain destinations in Bangladesh, accessible by Chander Gari (Jeep), CNG, or bike. When white clouds drift across the ridge and touch your skin at sunrise, you truly feel like you are living in paradise.</p>
+              <div class="card-footer">
+                <span><i class="fa-solid fa-location-dot"></i> Baghaichhari, Rangamati</span>
+                <span>Cloud Viewing</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. Saint Martin's Island -->
+          <article class="card" data-category="heritage">
+            <div class="card-img-wrap">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Beach_View_of_the_Saint_Martin%27s_Island.jpg" alt="Sea beach on Saint Martin's Island, Bangladesh" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Beach_View_of_the_Saint_Martin%27s_Island.jpg" target="_blank" rel="noopener noreferrer">Photo: Mirza Salman Hossain Beg · CC BY-SA 3.0</a>
+              <span class="card-badge-overlay">Coral Island</span>
+            </div>
+            <div class="card-body">
+              <h3>Saint Martin's Island</h3>
+              <p>Bangladesh's southernmost island is known for its clear blue water, coral-rock shoreline, and sandy beaches. Enjoy the Bay of Bengal scenery while respecting the island's fragile marine environment.</p>
+              <div class="card-footer">
+                <span><i class="fa-solid fa-location-dot"></i> Teknaf, Cox's Bazar</span>
+                <span>Island & Sea Beach</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8. Bangladesh National Museum -->
+          <article class="card" data-category="heritage">
+            <div class="card-img-wrap">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Bangladesh_National_Museum_Entrance.jpg/960px-Bangladesh_National_Museum_Entrance.jpg" alt="Entrance of Bangladesh National Museum in Dhaka" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Bangladesh_National_Museum_Entrance.jpg" target="_blank" rel="noopener noreferrer">Photo: Lahsim Niasoh · CC BY-SA 4.0</a>
+              <span class="card-badge-overlay">National Landmark</span>
+            </div>
+            <div class="card-body">
+              <h3>Bangladesh National Museum</h3>
+              <p>Chronologically organized across departments of ethnography, decorative art, history, natural history, and world civilization. Features a rich conservation laboratory originally curated by Nalini Kanta Bhattasali (1914–1947).</p>
+              <div class="card-footer">
+                <span><i class="fa-solid fa-location-dot"></i> Shahbag, Dhaka</span>
+                <span>History & Ethnography</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9. Bangabandhu Memorial Museum -->
+          <article class="card" data-category="heritage">
+            <div class="card-img-wrap">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Bangabandhu_Sheikh_Mujibur_Rahman_delivering_March_7th_speech_at_Ramna_Racecourse_Maidan_Dhaka_East_Pakistan_1971-03-07_%28PID-h0046%29.jpg/960px-Bangabandhu_Sheikh_Mujibur_Rahman_delivering_March_7th_speech_at_Ramna_Racecourse_Maidan_Dhaka_East_Pakistan_1971-03-07_%28PID-h0046%29.jpg" alt="Sheikh Mujibur Rahman delivering his March 7 speech at Ramna Racecourse in 1971" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Bangabandhu_Sheikh_Mujibur_Rahman_delivering_March_7th_speech_at_Ramna_Racecourse_Maidan_Dhaka_East_Pakistan_1971-03-07_(PID-h0046).jpg" target="_blank" rel="noopener noreferrer">Photo: Press Information Department · Public domain</a>
+              <span class="card-badge-overlay">March 7, 1971</span>
+            </div>
+            <div class="card-body">
+              <h3>Sheikh Mujib's March 7 Speech</h3>
+              <p>An archival photograph of Sheikh Mujibur Rahman addressing a vast crowd at Ramna Racecourse in Dhaka on March 7, 1971. His historic speech became a defining moment in Bangladesh's independence movement.</p>
+              <div class="card-footer">
+                <span><i class="fa-solid fa-location-dot"></i> Ramna Racecourse, Dhaka</span>
+                <span>Historic Speech · 1971</span>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Travel-to-Invigorate</h3>
+          <p style="font-size: 0.92rem; line-height: 1.7; color: #94a3b8;">
+            If you travel, you will not only learn about foreign cultures, but about your own as well. You will notice the cultural differences, and will find out what makes your culture unique. After returning from a long journey, you will see your country with new eyes.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/mdanwarulkarim" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
 
-    </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a>
+            <a href="outdoor.html"><i class="fa-solid fa-angle-right"></i> Outdoor Activities</a>
+            <a href="indoor.html"><i class="fa-solid fa-angle-right"></i> Indoor Activities</a>
+            <a href="interestingplaces.html"><i class="fa-solid fa-angle-right"></i> Interesting Places</a>
+          </div>
+        </div>
 
-    <!-- colum button end  -->
+        <div class="footer-col">
+          <h4>Traveler Resources</h4>
+          <div class="footer-links">
+            <a href="PackingTips.html"><i class="fa-solid fa-angle-right"></i> Smart Packing Tips</a>
+            <a href="food.html"><i class="fa-solid fa-angle-right"></i> Traditional Cuisine</a>
+            <a href="language_tips.html"><i class="fa-solid fa-angle-right"></i> Bangla Language Guide</a>
+            <a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact & Support</a>
+          </div>
+        </div>
 
-  </section>
-
-  <!-- banner start -->
-
-  <section id="banner">
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-
-      <div class="col" id="column1">
-        <div class="card">
-          <img src="/images/bagerhat.jpg" class="card-img-top " alt="...">
-          <div class="card-body">
-            <a href="outdoor.html">
-              <h3 class="card-title  text-center">Tourist Place</h3>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="footer-links">
+            <a href="https://goo.gl/maps/NkenkVLuLNDpVBSEA" target="_blank">
+              <i class="fa-solid fa-location-dot" style="color: var(--brand-primary);"></i>
+              Dhaka, Bangladesh
+            </a>
+            <a href="tel:+601112855248">
+              <i class="fa-solid fa-phone" style="color: var(--brand-primary);"></i>
+              +60-1112855248
+            </a>
+            <a href="mailto:karim247live@gmail.com">
+              <i class="fa-solid fa-envelope" style="color: var(--brand-primary);"></i>
+              karim247live@gmail.com
             </a>
           </div>
         </div>
       </div>
-      <div class="col" id="column2">
-        <div class="card">
-          <img src="/images/bdair.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <a href="outdoor2.html">
-              <h3 class="card-title text-center">Famous Area</h3>
-            </a>
 
-
-          </div>
-        </div>
-      </div>
-      <div class="col" id="column3">
-        <div class="card">
-          <img src="/images/barishal.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <a href="outdoor3.html">
-              <h3 class="card-title text-center">Different District</h3>
-            </a>
-
-          </div>
-        </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Travel-to-Invigorate. Crafted by Md. Anwarul Karim.</span>
+        <span>Designed for Cultural & Heritage Exploration</span>
       </div>
     </div>
-  </section>
-
-  <!-- banner end -->
-
-
-  <!-- indoor start -->
-  <div class="row row-cols-1 row-cols-md-2 g-4">
-    <div class="col">
-      <div class="card">
-        <img src="/images/national.PNG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <a name="targetname">
-            <h3>Bangladesh <span id="white">National Museum</span></h3>
-          </a>
-          <h5>
-            <p>The Bangladesh National Museum is the national museum of Bangladesh. The museum is well organized and
-              displays have been housed chronologically in several departments like department of ethnography and
-              decorative art, department of history and classical art, department of natural history, and department of
-              contemporary and world civilization. The museum also has a rich conservation laboratory. Nalini Kanta
-              Bhattasali served as the first curator of the museum during 1914–1947.</p>
-          </h5>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="images/mermaid.PNG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h3 class="card-title">Mermaid <span id="purple">Beach Resort</span></h3>
-          <h5>
-            <p>The place has a lot of charm and creative art, the staff are all very friendly and helpful, and the
-              management takes environmental and social responsibility very seriously. It's also a popular place for
-              Bangladeshi visitors and foreigners, so you'll be sure to meet some fun people.</p>
-          </h5>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="images/banga.PNG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h3>Bangabandhu Memorial <span id="white">Museum</span></h3>
-          <h5>
-            <p>This is the home of Bangabandhu Sheikh Mujib-ur Rahman, the Father of the Bangladeshi nation, who was
-              instrumental in making Bangladesh an independent country. This is also the place where he was
-              assasinated, the blood marks of which are now sealed below glass. The rooms have recently been
-              renovated, but the sense of a nation trying to come to grips with its bloody history is evident.</p>
-          </h5>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="images/sajek.PNG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h3>Cloud <span id="orange">Valley, </span>Sajek</h3>
-
-          <h5>
-            <p>In 2016 Sajek valley become the most popular tourist destination in Bangladesh. A few years ago it
-              was so difficult to reach this place because of the transportation service and some security problem.
-              But nowadays anyone can go to this place directly by reserving Jeep or CNG or Bike. If you like hill,
-              Nature, Sky you must to there. You become splashed by seeing its natural beauty specially when you
-              will see that the cloud is touching your body then you will feel that you are living in the paradise.
-            </p>
-          </h5>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- end -->
-
-
-  <!-- footer start -->
-
-
+  </footer>
+  <script src="script.js"></script>
 </body>
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-
 </html>
