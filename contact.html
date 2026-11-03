@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel-to-Invigorate | Discover Bangladesh With Style</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <i class="fa-solid fa-compass" style="color: var(--brand-primary);"></i>
+        Travel<span>-to-</span>Invigorate
+      </a>
+      <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="">Home</a></li>
+          <li><a href="outdoor.html" class="">Outdoor</a></li>
+          <li><a href="indoor.html" class="">Indoor</a></li>
+          <li><a href="interestingplaces.html" class="">Places</a></li>
+          <li><a href="PackingTips.html" class="">Packing</a></li>
+          <li><a href="sadia.html" class="">Food</a></li>
+          <li><a href="language_tips.html" class="">Language</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark Mode" title="Toggle Dark/Light Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="hero-badge"><i class="fa-solid fa-headset"></i> Get In Touch</span>
+        <h1>Contact Travel-to-Invigorate</h1>
+        <p>
+          Have questions about planning an itinerary across Bangladesh, booking a local heritage tour, or collaborating with us? Send us a message directly.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info-card">
+            <span class="tag-badge">Direct Channels</span>
+            <h2 style="margin-top: 0.4rem;">Reach Out Anytime</h2>
+            <p style="color: var(--text-secondary); margin-top: 0.5rem;">
+              Whether you need travel route advice for Sajek Valley, museum timings in Dhaka, or Bangla language tips, we're happy to help.
+            </p>
+
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <h4 style="margin-bottom: 0.2rem;">Locations</h4>
+                  <p style="color: var(--text-secondary); font-size: 0.92rem;">Mugdapara, Dhaka, Bangladesh<br>Jalan Gombak, 53100, Selangor, Malaysia</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <h4 style="margin-bottom: 0.2rem;">Email Address</h4>
+                  <p style="color: var(--text-secondary); font-size: 0.92rem;"><a href="mailto:karim247live@gmail.com" style="color: var(--brand-primary); font-weight: 600;">karim247live@gmail.com</a></p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <h4 style="margin-bottom: 0.2rem;">Phone / WhatsApp</h4>
+                  <p style="color: var(--text-secondary); font-size: 0.92rem;">+60-1112855248</p>
+                </div>
+              </div>
+            </div>
+
+            <div style="padding-top: 1.25rem; border-top: 1px solid var(--border-color);">
+              <h4 style="margin-bottom: 0.6rem;">Connect on Social Media</h4>
+              <div class="social-links" style="margin-top: 0;">
+                <a href="https://github.com/mdanwarulkarim" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-card">
+            <span class="tag-badge">Send a Message</span>
+            <h2 style="margin-top: 0.4rem; margin-bottom: 1.25rem;">Plan Your Journey With Us</h2>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="fullName">Your Full Name</label>
+                <input type="text" id="fullName" class="form-control" placeholder="e.g., Md. Anwarul Karim" required />
+              </div>
+
+              <div class="form-group">
+                <label for="emailAddr">Email Address</label>
+                <input type="email" id="emailAddr" class="form-control" placeholder="you@example.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="interestTopic">Destination or Topic of Interest</label>
+                <select id="interestTopic" class="form-control">
+                  <option value="outdoor">Outdoor Adventure (Sundarbans, Sajek, Srimangal)</option>
+                  <option value="indoor">Indoor Museums & Heritage (Dhaka, Dhamrai)</option>
+                  <option value="food">Traditional Food & Culinary Trail</option>
+                  <option value="language">Bangla Language & Cultural Guide</option>
+                  <option value="general">General Inquiry</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="messageBody">Your Message</label>
+                <textarea id="messageBody" rows="4" class="form-control" placeholder="Tell us about your travel plans or questions..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+
+              <div id="formFeedback" style="display: none; margin-top: 1rem; padding: 0.85rem 1rem; border-radius: var(--radius-sm); background: var(--bg-accent); color: var(--brand-primary); font-weight: 600; font-size: 0.92rem;"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Travel-to-Invigorate</h3>
+          <p style="font-size: 0.92rem; line-height: 1.7; color: #94a3b8;">
+            If you travel, you will not only learn about foreign cultures, but about your own as well. You will notice the cultural differences, and will find out what makes your culture unique. After returning from a long journey, you will see your country with new eyes.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/mdanwarulkarim" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a>
+            <a href="outdoor.html"><i class="fa-solid fa-angle-right"></i> Outdoor Activities</a>
+            <a href="indoor.html"><i class="fa-solid fa-angle-right"></i> Indoor Activities</a>
+            <a href="interestingplaces.html"><i class="fa-solid fa-angle-right"></i> Interesting Places</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Traveler Resources</h4>
+          <div class="footer-links">
+            <a href="PackingTips.html"><i class="fa-solid fa-angle-right"></i> Smart Packing Tips</a>
+            <a href="sadia.html"><i class="fa-solid fa-angle-right"></i> Traditional Cuisine</a>
+            <a href="language_tips.html"><i class="fa-solid fa-angle-right"></i> Bangla Language Guide</a>
+            <a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact & Support</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="footer-links">
+            <a href="https://goo.gl/maps/NkenkVLuLNDpVBSEA" target="_blank">
+              <i class="fa-solid fa-location-dot" style="color: var(--brand-primary);"></i>
+              Dhaka, Bangladesh &bull; Jalan Gombak, 53100, Selangor
+            </a>
+            <a href="tel:+601112855248">
+              <i class="fa-solid fa-phone" style="color: var(--brand-primary);"></i>
+              +60-1112855248
+            </a>
+            <a href="mailto:karim247live@gmail.com">
+              <i class="fa-solid fa-envelope" style="color: var(--brand-primary);"></i>
+              karim247live@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Travel-to-Invigorate. Crafted by Md. Anwarul Karim.</span>
+        <span>Designed for Cultural & Heritage Exploration</span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
