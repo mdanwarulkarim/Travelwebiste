@@ -23,7 +23,7 @@
           <li><a href="indoor.html" class="">Indoor</a></li>
           <li><a href="interestingplaces.html" class="">Places</a></li>
           <li><a href="PackingTips.html" class="">Packing</a></li>
-          <li><a href="sadia.html" class="">Food</a></li>
+          <li><a href="food.html" class="">Food</a></li>
           <li><a href="language_tips.html" class="">Language</a></li>
           <li><a href="contact.html" class="">Contact</a></li>
       </ul>
@@ -39,7 +39,8 @@
   </header>
 
   <main>
-    <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80');">
+    <section class="hero" style="background-image: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Save_the_sundarbans_20.jpg/1920px-Save_the_sundarbans_20.jpg');">
+      <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Save_the_sundarbans_20.jpg" target="_blank" rel="noopener noreferrer">Photo: Shihabur Rahman · CC BY-SA 4.0</a>
       <div class="hero-content">
         <div class="hero-badge"><i class="fa-solid fa-earth-asia"></i> Cultural & Heritage Guide</div>
         <h1>Travel With Style</h1>
@@ -53,7 +54,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="home-guides">
       <div class="container">
         <div class="section-header">
           <span class="tag-badge">Why We Explore</span>
@@ -79,7 +80,8 @@
 
           <article class="card">
             <div class="card-img-wrap">
-              <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80" alt="Interesting Places" />
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Sunrise_at_Sajek_Valley.jpg/960px-Sunrise_at_Sajek_Valley.jpg" alt="Sajek Valley, Bangladesh" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Sunrise_at_Sajek_Valley.jpg" target="_blank" rel="noopener noreferrer">Photo: Masum-al-Hasan Rocky · CC BY-SA 4.0</a>
               <span class="card-badge-overlay">Must-Visit Spots</span>
             </div>
             <div class="card-body">
@@ -94,13 +96,14 @@
 
           <article class="card">
             <div class="card-img-wrap">
-              <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?auto=format&fit=crop&w=800&q=80" alt="Traditional Food" />
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/The_unique_culture_of_hospitality%2C_the_Mejbani_Bhoj.jpg/960px-The_unique_culture_of_hospitality%2C_the_Mejbani_Bhoj.jpg" alt="Traditional Chittagong Mezbani feast in Bangladesh" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:The_unique_culture_of_hospitality,_the_Mejbani_Bhoj.jpg" target="_blank" rel="noopener noreferrer">Photo: Mohammad Shajahan · CC BY-SA 4.0</a>
               <span class="card-badge-overlay">Bangaliketa</span>
             </div>
             <div class="card-body">
               <h3>Traditional Food</h3>
               <p>Explore your favorite Bangladeshi cuisine—from iconic fish and rice, aromatic Mughlai Kacchi Biryani, and crispy Fuchka to Roshogolla sweets.</p>
-              <a href="sadia.html" class="card-footer">
+              <a href="food.html" class="card-footer">
                 <span>Taste the Cuisine</span>
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
@@ -125,8 +128,45 @@
       </div>
     </section>
 
-    <section class="section section-alt">
+    <section class="section trip-finder-section">
       <div class="container">
+        <div class="trip-finder-panel">
+          <div class="trip-finder-copy">
+            <span class="tag-badge"><i class="fa-solid fa-wand-magic-sparkles"></i> Your Bangladesh Trip</span>
+            <h2>What kind of day are you dreaming of?</h2>
+            <p>Pick a travel mood and get a little inspiration for where to go next.</p>
+            <div class="trip-mood-options" role="group" aria-label="Choose your travel mood">
+              <button class="trip-mood-btn" type="button" data-trip-mood="nature" aria-pressed="false">
+                <i class="fa-solid fa-mountain-sun"></i> Nature & Adventure
+              </button>
+              <button class="trip-mood-btn" type="button" data-trip-mood="culture" aria-pressed="false">
+                <i class="fa-solid fa-landmark"></i> Culture & History
+              </button>
+              <button class="trip-mood-btn" type="button" data-trip-mood="food" aria-pressed="false">
+                <i class="fa-solid fa-bowl-food"></i> Food & Flavors
+              </button>
+            </div>
+          </div>
+          <div class="trip-suggestion" id="tripSuggestion" aria-live="polite" aria-atomic="true">
+            <div class="trip-suggestion-icon" aria-hidden="true"><i class="fa-solid fa-compass"></i></div>
+            <div>
+              <span class="trip-suggestion-label">A little inspiration</span>
+              <h3 id="tripSuggestionTitle">Your next story starts here</h3>
+              <p id="tripSuggestionText">Choose a mood and we’ll point you toward a place to explore.</p>
+              <a class="trip-suggestion-link" id="tripSuggestionLink" href="interestingplaces.html">
+                Explore the guides <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+            <button class="trip-surprise-btn" id="tripSurpriseBtn" type="button" aria-label="Surprise me with a destination" title="Surprise me">
+              <i class="fa-solid fa-shuffle"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container" id="featuredGrid">
         <div class="section-header">
           <span class="tag-badge">Featured Highlights</span>
           <h2>Iconic Experiences Across Bangladesh</h2>
@@ -136,7 +176,8 @@
         <div class="grid-3">
           <article class="card">
             <div class="card-img-wrap">
-              <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80" alt="Mangrove Sundarbans" />
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Save_the_sundarbans_20.jpg/960px-Save_the_sundarbans_20.jpg" alt="Sundarbans East Wildlife Sanctuary, Bangladesh" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Save_the_sundarbans_20.jpg" target="_blank" rel="noopener noreferrer">Photo: Shihabur Rahman · CC BY-SA 4.0</a>
               <span class="card-badge-overlay">UNESCO Heritage</span>
             </div>
             <div class="card-body">
@@ -151,7 +192,8 @@
 
           <article class="card">
             <div class="card-img-wrap">
-              <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80" alt="Cloud Valley Sajek" />
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Sunrise_at_Sajek_Valley.jpg/960px-Sunrise_at_Sajek_Valley.jpg" alt="Sunrise in Sajek Valley, Bangladesh" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Sunrise_at_Sajek_Valley.jpg" target="_blank" rel="noopener noreferrer">Photo: Masum-al-Hasan Rocky · CC BY-SA 4.0</a>
               <span class="card-badge-overlay">Hill Tracts</span>
             </div>
             <div class="card-body">
@@ -166,7 +208,8 @@
 
           <article class="card">
             <div class="card-img-wrap">
-              <img src="https://images.unsplash.com/photo-1518998053901-5348d3961a04?auto=format&fit=crop&w=800&q=80" alt="Liberation War Museum" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Liberation_War_Museum%2Cnew_building.jpg" alt="Liberation War Museum in Dhaka, Bangladesh" loading="lazy" decoding="async" />
+              <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Liberation_War_Museum,new_building.jpg" target="_blank" rel="noopener noreferrer">Photo: Ahm masum · CC BY-SA 4.0</a>
               <span class="card-badge-overlay">Dhaka Heritage</span>
             </div>
             <div class="card-body">
@@ -188,7 +231,7 @@
         <div class="footer-col">
           <h3>Travel-to-Invigorate</h3>
           <p style="font-size: 0.92rem; line-height: 1.7; color: #94a3b8;">
-            If you travel, you will not only learn about foreign cultures, but about your own as well. You will notice the cultural differences, and will find out what makes your culture unique. After returning from a long journey, you will see your country with new eyes.
+            If you travel, you will not only learn about foreign cultures, but also learn different feelings and perspectives.
           </p>
           <div class="social-links">
             <a href="https://github.com/mdanwarulkarim" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
@@ -212,7 +255,7 @@
           <h4>Traveler Resources</h4>
           <div class="footer-links">
             <a href="PackingTips.html"><i class="fa-solid fa-angle-right"></i> Smart Packing Tips</a>
-            <a href="sadia.html"><i class="fa-solid fa-angle-right"></i> Traditional Cuisine</a>
+            <a href="food.html"><i class="fa-solid fa-angle-right"></i> Traditional Cuisine</a>
             <a href="language_tips.html"><i class="fa-solid fa-angle-right"></i> Bangla Language Guide</a>
             <a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact & Support</a>
           </div>
@@ -223,7 +266,7 @@
           <div class="footer-links">
             <a href="https://goo.gl/maps/NkenkVLuLNDpVBSEA" target="_blank">
               <i class="fa-solid fa-location-dot" style="color: var(--brand-primary);"></i>
-              Dhaka, Bangladesh &bull; Jalan Gombak, 53100, Selangor
+              Dhaka, Bangladesh
             </a>
             <a href="tel:+601112855248">
               <i class="fa-solid fa-phone" style="color: var(--brand-primary);"></i>
@@ -243,6 +286,10 @@
       </div>
     </div>
   </footer>
+  <div class="page-scroll-progress" id="pageScrollProgress" aria-hidden="true"></div>
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top" title="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
   <script src="script.js"></script>
 </body>
 </html>

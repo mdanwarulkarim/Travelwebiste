@@ -198,6 +198,143 @@ document.addEventListener('DOMContentLoaded', () => {
       contactForm.reset();
     });
   }
+
+  // 7. Home Page Trip Finder, Reveal Animations, and Scroll Controls
+  const tripSuggestion = document.getElementById('tripSuggestion');
+  const moodButtons = document.querySelectorAll('.trip-mood-btn[data-trip-mood]');
+  const surpriseButton = document.getElementById('tripSurpriseBtn');
+
+  if (tripSuggestion && moodButtons.length > 0) {
+    const tripTitle = document.getElementById('tripSuggestionTitle');
+    const tripText = document.getElementById('tripSuggestionText');
+    const tripLink = document.getElementById('tripSuggestionLink');
+    const suggestions = {
+      nature: {
+        label: 'Nature & adventure pick',
+        title: 'Chase the clouds in Sajek',
+        text: 'Wake up above the hills, or explore the mangrove waterways of the Sundarbans.',
+        linkText: 'Explore outdoor adventures',
+        href: 'outdoor.html',
+        icon: 'fa-mountain-sun'
+      },
+      culture: {
+        label: 'Culture & history pick',
+        title: 'Step into Bangladesh’s story',
+        text: 'Explore the museums of Dhaka and the places that shaped the country’s history.',
+        linkText: 'Explore cultural places',
+        href: 'indoor.html',
+        icon: 'fa-landmark'
+      },
+      food: {
+        label: 'Food & flavors pick',
+        title: 'Follow the flavors of Bangladesh',
+        text: 'From Shorshe Ilish and Kacchi Biryani to sweets and street snacks, find a new favorite.',
+        linkText: 'Explore Bangladeshi food',
+        href: 'food.html',
+        icon: 'fa-bowl-food'
+      },
+      island: {
+        label: 'Surprise destination',
+        title: 'Take the island route',
+        text: 'See the beach and clear blue water of Saint Martin’s Island in the Bay of Bengal.',
+        linkText: 'Discover the island',
+        href: 'outdoor.html',
+        icon: 'fa-umbrella-beach'
+      },
+      tea: {
+        label: 'Surprise destination',
+        title: 'Find a quiet tea garden',
+        text: 'Head to the rolling green tea hills around Sreemangal in Sylhet.',
+        linkText: 'Explore Sreemangal',
+        href: 'outdoor.html',
+        icon: 'fa-mug-hot'
+      }
+    };
+    const surpriseSuggestions = ['nature', 'culture', 'food', 'island', 'tea'];
+
+    function showTripSuggestion(key) {
+      const item = suggestions[key];
+      if (!item || !tripTitle || !tripText || !tripLink) return;
+
+      moodButtons.forEach(button => {
+        button.setAttribute('aria-pressed', String(button.dataset.tripMood === key));
+      });
+      tripSuggestion.querySelector('.trip-suggestion-label').textContent = item.label;
+      tripSuggestion.querySelector('.trip-suggestion-icon i').className = `fa-solid ${item.icon}`;
+      tripTitle.textContent = item.title;
+      tripText.textContent = item.text;
+      tripLink.href = item.href;
+      tripLink.innerHTML = `${item.linkText} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>`;
+      tripSuggestion.classList.remove('is-updating');
+      requestAnimationFrame(() => tripSuggestion.classList.add('is-updating'));
+    }
+
+    moodButtons.forEach(button => {
+      button.addEventListener('click', () => showTripSuggestion(button.dataset.tripMood));
+    });
+
+    if (surpriseButton) {
+      surpriseButton.addEventListener('click', () => {
+        const current = moodButtons.length
+          ? Array.from(moodButtons).find(button => button.getAttribute('aria-pressed') === 'true')?.dataset.tripMood
+          : null;
+        const choices = surpriseSuggestions.filter(key => key !== current);
+        const next = choices[Math.floor(Math.random() * choices.length)];
+        showTripSuggestion(next);
+      });
+    }
+  }
+
+  const scrollProgress = document.getElementById('pageScrollProgress');
+  const backToTop = document.getElementById('backToTop');
+  let scrollFrame = 0;
+
+  function updateScrollControls() {
+    scrollFrame = 0;
+    const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = scrollableHeight > 0 ? window.scrollY / scrollableHeight : 0;
+    if (scrollProgress) scrollProgress.style.transform = `scaleX(${progress})`;
+    if (backToTop) backToTop.classList.toggle('is-visible', window.scrollY > 500);
+  }
+
+  if (scrollProgress || backToTop) {
+    window.addEventListener('scroll', () => {
+      if (!scrollFrame) scrollFrame = requestAnimationFrame(updateScrollControls);
+    }, { passive: true });
+    window.addEventListener('resize', updateScrollControls);
+    updateScrollControls();
+  }
+
+  if (backToTop) {
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
+      });
+    });
+  }
+
+  const homeRevealTargets = document.querySelectorAll(
+    '#home-guides .section-header, #home-guides .grid-4 > .card, #featuredGrid .section-header, #featuredGrid .grid-3 > .card, .trip-finder-panel'
+  );
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (homeRevealTargets.length > 0 && !prefersReducedMotion && 'IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    homeRevealTargets.forEach((element, index) => {
+      element.classList.add('reveal-on-scroll');
+      element.style.setProperty('--reveal-delay', `${(index % 4) * 90}ms`);
+      revealObserver.observe(element);
+    });
+  }
 });
 
 // Global Speech Helper

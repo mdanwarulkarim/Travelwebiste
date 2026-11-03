@@ -20,6 +20,7 @@ This repository contains the complete, modern UI/UX overhaul of **Travel-to-Invi
   - **Interactive Pre-Departure Packing Checklist** with a real-time completion progress bar saved to `localStorage`.
   - **Interactive Bangla Language Tutor** with 4 switchable lesson modules and one-click **Web Speech API audio pronunciation**.
   - **Fixed Broken Links & Typos**: Resolved the broken `imgages/Make a list.jpeg` image path on `PackingTips.html`, replaced placeholder Lorem Ipsum text on `interestingplaces.html` with authentic regional transport guides (*Chander Gari*, *Sadarghat Launches*, *Rickshaws*), and unified `outdoor.html` and `indoor2.html` so no navigation link ever hits a 404.
+- **Bangladesh Photo Credits**: Destination, museum, transport, and food photos link to their Wikimedia Commons source pages with visible author/license credits. Instructional packing images remain illustrative.
 
 ---
 
@@ -33,7 +34,7 @@ Travelwebiste/
 ├── indoor.html              # Indoor Activities — 5 Dhaka & Dhamrai museums, galleries & planetarium
 ├── interestingplaces.html   # Interesting Places Hub & Regional Transportation Guide
 ├── PackingTips.html         # 6 Smart Packing Rules + Interactive Persistent Checklist
-├── sadia.html               # Traditional Food — Bangaliketa, Fish & Rice, Mughlai Biryani & Sweets
+├── food.html                # Traditional Food — Bangaliketa, Fish & Rice, Mughlai Biryani & Sweets
 ├── language_tips.html       # Basic Bangla for Tourists — Interactive lessons + Audio Pronunciation
 ├── contact.html             # Contact & Trip Inquiry Form + Direct Channels
 ├── style.css                # Master Responsive Stylesheet (Light/Dark theme variables)
