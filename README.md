@@ -9,18 +9,20 @@
 
 ---
 
-## ✨ What's New in the Complete Redesign
+## ✨ About the Site
 
-This repository contains the complete, modern UI/UX overhaul of **Travel-to-Invigorate**, a multi-page cultural, culinary, and heritage travel guide to Bangladesh. Every original page and URL path has been preserved while upgrading the architecture to a clean, responsive, zero-dependency design system.
+**Travel-to-Invigorate** is a responsive, multi-page travel guide to Bangladesh, covering destinations, culture, food, transport, packing, and useful Bangla phrases. It is built with static HTML, CSS, and vanilla JavaScript; no build step or package installation is required.
 
 ### Key Highlights
-- **Unified Design System (`style.css`)**: Replaces 10+ fragmented CSS files with a single CSS Custom Properties stylesheet featuring **Light & Dark Mode** (`localStorage` persisted), glassmorphism sticky navigation, fluid typography (`Playfair Display` + `Plus Jakarta Sans`), and responsive CSS Grid layouts.
+- **Responsive design (`style.css`)**: Shared styles, mobile navigation, responsive layouts, and light/dark theme support.
 - **Interactive Features (`script.js`)**:
   - **Live Category Filtering & Search Bar** across Outdoor Destinations, Indoor Cultural Venues, and Traditional Cuisine.
   - **Interactive Pre-Departure Packing Checklist** with a real-time completion progress bar saved to `localStorage`.
   - **Interactive Bangla Language Tutor** with 4 switchable lesson modules and one-click **Web Speech API audio pronunciation**.
-  - **Fixed Broken Links & Typos**: Resolved the broken `imgages/Make a list.jpeg` image path on `PackingTips.html`, replaced placeholder Lorem Ipsum text on `interestingplaces.html` with authentic regional transport guides (*Chander Gari*, *Sadarghat Launches*, *Rickshaws*), and unified `outdoor.html` and `indoor2.html` so no navigation link ever hits a 404.
-- **Bangladesh Photo Credits**: Destination, museum, transport, and food photos link to their Wikimedia Commons source pages with visible author/license credits. Instructional packing images remain illustrative.
+  - **Home-page trip finder**: Choose a travel mood or get a surprise destination suggestion.
+  - **Scroll interactions**: Reveal animations, reading progress, and a back-to-top button, with reduced-motion support.
+  - **Consistent navigation**: The food guide is `food.html`; `indoor2.html` remains an outdoor-guide alias for older links.
+- **Bangladesh photography**: Destination, museum, transport, and food photos include links to their source pages and visible credits. Packing illustrations are illustrative.
 
 ---
 
@@ -28,39 +30,40 @@ This repository contains the complete, modern UI/UX overhaul of **Travel-to-Invi
 
 ```text
 Travelwebiste/
-├── index.html               # Home Page — Hero banner, 4 core pillars & featured highlights
-├── outdoor.html             # Outdoor Activities — 9 filterable UNESCO, hill & nature destinations
-├── indoor2.html             # Legacy Outdoor alias (synced with outdoor.html to prevent broken links)
-├── indoor.html              # Indoor Activities — 5 Dhaka & Dhamrai museums, galleries & planetarium
-├── interestingplaces.html   # Interesting Places Hub & Regional Transportation Guide
-├── PackingTips.html         # 6 Smart Packing Rules + Interactive Persistent Checklist
-├── food.html                # Traditional Food — Bangaliketa, Fish & Rice, Mughlai Biryani & Sweets
-├── language_tips.html       # Basic Bangla for Tourists — Interactive lessons + Audio Pronunciation
-├── contact.html             # Contact & Trip Inquiry Form + Direct Channels
-├── style.css                # Master Responsive Stylesheet (Light/Dark theme variables)
-├── script.js                # Master Interactive JavaScript Controller
+├── index.html               # Home page, featured destinations, and interactive trip finder
+├── outdoor.html             # Outdoor destinations and activities
+├── indoor2.html             # Legacy alias for the outdoor guide
+├── indoor.html              # Museums, galleries, and indoor activities
+├── interestingplaces.html   # Places to visit and regional transport
+├── PackingTips.html         # Packing advice and interactive checklist
+├── food.html                # Traditional Bangladeshi food guide
+├── language_tips.html       # Bangla phrases and pronunciation
+├── contact.html             # Contact and trip inquiry form
+├── style.css                # Shared responsive styles and animations
+├── script.js                # Shared JavaScript interactions
 └── README.md                # Project Documentation
 ```
 
 ---
 
-## 🚀 Quick Deployment to GitHub Pages
+## 🚀 GitHub Pages
 
-1. Download and extract **`Travelwebsite_Complete_Redesign.zip`**.
-2. Copy all files into your local `Travelwebiste` repository folder (replacing the old HTML/CSS files).
-3. Commit and push to your `main` or `master` branch:
+The live site is [mdanwarulkarim.github.io/Travelwebiste](https://mdanwarulkarim.github.io/Travelwebiste/). To publish updates:
+
+1. In the repository’s **Settings → Pages**, choose **Deploy from a branch**, then select `main` and `/(root)` as the publishing source.
+2. Commit and push changes to `main`:
    ```bash
    git add .
-   git commit -m "Redesign all pages with unified responsive UI, dark mode, and interactive JS"
+   git commit -m "Update travel website"
    git push origin main
    ```
-4. Your live site at `https://mdanwarulkarim.github.io/Travelwebiste/` will automatically update within 1–2 minutes.
+3. GitHub Pages deploys the site from the root of `main`. Check the **Actions** tab for deployment status.
 
 ---
 
 ## 👤 Author
 
-**Md. Anwarul Karim**  
-- **Email**: [karim247live@gmail.com](mailto:karim247live@gmail.com)  
-- **GitHub**: [@mdanwarulkarim](https://github.com/mdanwarulkarim)  
+**Md. Anwarul Karim**
+- **Email**: [karim247live@gmail.com](mailto:karim247live@gmail.com)
+- **GitHub**: [@mdanwarulkarim](https://github.com/mdanwarulkarim)
 - **Location**: Dhaka, Bangladesh
