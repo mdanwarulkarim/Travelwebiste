@@ -8,6 +8,7 @@
 > *"If you travel, you will not only learn about foreign cultures, but about your own as well. You will notice the cultural differences, and will find out what makes your culture unique. After returning from a long journey, you will see your country with new eyes."*
 
 ---
+<img width="1024" height="1536" alt="Modern Bangladesh Travel Portal" src="https://github.com/user-attachments/assets/059aa0a1-b58b-4828-8996-13e7cd9fc46c" />
 
 ## ✨ About the Site
 
